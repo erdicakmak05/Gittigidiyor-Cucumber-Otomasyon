@@ -1,4 +1,4 @@
-<h3>Gittigidiyor Websitesinde Otmasyon Çalışması</h3>
+<h3>Gittigidiyor Websitesinde Otomasyon Çalışması</h3>
 
 - Otomasyonun hazırlanışında Java, Maven, Selenium4, WebDriverManager, Cucumber, JUnit, Courgette-JVM ve Allure-Cucumber7-JVM gibi teknoloji, kütüphane ve araçlar kullanılmıştır.
 
