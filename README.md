@@ -16,7 +16,7 @@
 
 - Cucumber, Behavior Driven Development(BDD) destekleyen bir test yaklaşımıdır. Projede Cucumber ile test senaryoları yazılırken Gherkin dili kullanıldı. Bu dilin en büyük avantajı herkes tarafından yazılan senaryoların anlaşılabilir olmasıdır.
 ![image](https://user-images.githubusercontent.com/90332095/156788117-d3f6f388-4b0e-4811-b8e6-9eb3e51c121c.png)
-Otomatize edilen projede 3 farklı raporlama aracı kullanılmıştır. Testleri çalıştırma şeklinize göre istenilen kütüphane ile rapor alınabilir.
+* Otomatize edilen projede 3 farklı raporlama aracı kullanılmıştır. Testleri çalıştırma şeklinize göre istenilen kütüphane ile rapor alınabilir.
 
 - Courgette-JVM Report - Paralel Test
 Courgete Runner'da aynı zamanda Cucumber reports aktif halde, çift rapor alınabilmektedir.
