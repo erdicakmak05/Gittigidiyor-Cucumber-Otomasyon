@@ -9,7 +9,8 @@
 
 - Websitesinde bulunan tüm değişkenler "/src/configurations.properties" dosyası altında tanımlanarak bütün değişkenler bu dosyadan kullanılmıştır. Böylece websitesi üzerinde herhangi bir değişiklik olduğunda otomasyon suiteinde düzeltmeler yapmak kolay olacaktır. Sık kullanılan methodlar kodun okunabilirliğini artırmak için ReusableMethods classında tanımlanmıştır.
 
-- Frameworkde pozitif ve nagatif login testleri örnek olarak gerçekleştirilmiştir. Aldığımız raporlarda farkı görmek maksadı ile 1 test case'e hata verdirildi. Framework testlerde hata alındığında ekran görüntüsü alır ve raporlara alınan hata'nın ekran görüntüsü otomatik olarak eklenir. "/stepdefinition/Hooks.java"
+- Frameworkde pozitif ve nagatif login testleri örnek olarak gerçekleştirilmiştir. Aldığımız raporlarda farkı görmek maksadı ile 1 test case'e hata verdirildi.
+- Framework testlerde hata alındığında ekran görüntüsü alır ve raporlara alınan hata'nın ekran görüntüsü otomatik olarak eklenir. "/stepdefinition/Hooks.java"
 ![image](https://user-images.githubusercontent.com/90332095/156773726-0626ebb2-7ddc-4272-8044-e7fa4d68baa0.png)
 
 
