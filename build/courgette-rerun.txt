@@ -1,1 +1,2 @@
 file:src/test/resources/features/US1001_PositiveLoginTest.feature:13
+file:src/test/resources/features/US1001_PositiveLoginTest.feature:4

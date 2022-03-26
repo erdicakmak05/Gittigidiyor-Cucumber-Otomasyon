@@ -18,17 +18,10 @@ import org.junit.runner.RunWith;
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features",
                 glue = "stepdefinitions",
-                tags = {"@smoke"},
+                tags = {"@us01"},
 
                 plugin = { "pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
         ))
 public class AllureRunner {
+        //allure serve
 }
-
-/*
-node.js kurulu olmalı
-now install allure-commandline tool using below command:
-npm install -g allure-commandline
-now just run the below command:
-allure generate --clean && allure open
- */

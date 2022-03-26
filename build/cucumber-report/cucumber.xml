@@ -1,61 +1,204 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="Test Suite" skipped="0" tests="5" time="190.188">
+<testsuite failures="5" name="Test Suite" skipped="0" tests="5" time="248.63700000000003">
 
-<testcase classname="US1001 Positive login testi" name="TC01 Email ile Positive Login Testi" time="40.365">
+<testcase classname="US1001 Positive login testi" name="TC02 Username ile Positive Login Testi" time="50.571">
             
-    <system-out>
+    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3404969e3c1b52c04200e1dcd6c097f7, actions {actions=[org.openqa.selenium.interactions.Sequence@7beae796]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54645/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3404969e3c1b52c04200e1dcd6c097f7" type="org.openqa.selenium.json.JsonException">
                     
         <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
-And kullanici giris yap linkine tiklar......................................passed
-Then kullanici mail olarak "ValidEmail" girer...............................passed
-And kullanici password olarak "ValidPassword" girer.........................passed
-And kullanici giris yap butonuna tiklar.....................................passed
-Then kullanici basarili giris yaptigini test eder...........................passed
-And kullanici sayfayi kapatir...............................................passed
-]]>
-                
-    </system-out>
-        
-</testcase>
-
-<testcase classname="US1002 Negative Login Test" name="TC04 Yanlış mail ve doğru şifre ile giriş yapılmamalı" time="26.349">
-            
-    <system-out>
-                    
-        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
-And kullanici giris yap linkine tiklar......................................passed
-And kullanici mail olarak "InvalidEmail" girer..............................passed
-And kullanici password olarak "ValidPassword" girer.........................passed
-And kullanici giris yap butonuna tiklar.....................................passed
-Then kullanici basarili giris yapılmadigini test eder.......................passed
-And kullanici sayfayi kapatir...............................................passed
-]]>
-                
-    </system-out>
-        
-</testcase>
-
-<testcase classname="US1001 Positive login testi" name="TC02 Username ile Positive Login Testi" time="57.052">
-            
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@title='Hesabım']&quot;}&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [61d8f5576a3eabd251f2dbb73f4fdc10, findElement {using=xpath, value=//div[@title='Hesabım']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62767/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 61d8f5576a3eabd251f2dbb73f4fdc10" type="org.openqa.selenium.NoSuchElementException">
-                    
-        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
-And kullanici giris yap linkine tiklar......................................passed
-Then kullanici username olarak "ValidUsername" girer........................passed
-And kullanici giris yap butonuna tiklar.....................................passed
-Then kullanici basarili giris yaptigini test eder...........................failed
+And kullanici giris yap linkine tiklar......................................failed
+Then kullanici username olarak "ValidUsername" girer........................skipped
+And kullanici giris yap butonuna tiklar.....................................skipped
+Then kullanici basarili giris yaptigini test eder...........................skipped
 And kullanici sayfayi kapatir...............................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='Hesabım']"}
-  (Session info: chrome=98.0.4758.102)
+org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3404969e3c1b52c04200e1dcd6c097f7, actions {actions=[org.openqa.selenium.interactions.Sequence@7beae796]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54645/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3404969e3c1b52c04200e1dcd6c097f7
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at ✽.kullanici giris yap linkine tiklar(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1001_PositiveLoginTest.feature:15)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+		at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+		at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+		at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+		at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+		at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+		at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+		at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+		at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+		at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+		at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+		at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+		at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+		at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+		at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+		at io.cucumber.core.cli.Main.run(Main.java:87)
+		at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+	at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='GiriÅŸ Yap']"}
+  (Session info: chrome=99.0.4844.82)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61d8f5576a3eabd251f2dbb73f4fdc10, findElement {using=xpath, value=//div[@title='Hesabım']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62767/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 61d8f5576a3eabd251f2dbb73f4fdc10
+Command: [3404969e3c1b52c04200e1dcd6c097f7, findElement {using=xpath, value=//div[@title='GiriÅŸ Yap']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54645/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3404969e3c1b52c04200e1dcd6c097f7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -73,46 +216,555 @@ Session ID: 61d8f5576a3eabd251f2dbb73f4fdc10
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
-	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_basarili_giris_yaptigini_test_eder(US1001_positiveLoginTestStepDefinitions.java:39)
-	at ✽.kullanici basarili giris yaptigini test eder(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1001_PositiveLoginTest.feature:19)
+	at com.sun.proxy.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:206)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:157)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 78 more
 ]]>
                 
     </failure>
         
 </testcase>
 
-<testcase classname="US1002 Negative Login Test" name="TC05 Doğru mail ve yanlış şifre ile giriş yapılmamalı" time="18.726">
+<testcase classname="US1001 Positive login testi" name="TC01 Email ile Positive Login Testi" time="48.554">
             
-    <system-out>
+    <failure message="unknown error: cannot determine loading status&#10;from disconnected: not connected to DevTools&#10;  (Session info: chrome=99.0.4844.82)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [544b23765b5553158fc28bfbf1a8f5bb, get {url=https://www.gittigidiyor.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54402/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 544b23765b5553158fc28bfbf1a8f5bb" type="org.openqa.selenium.WebDriverException">
                     
-        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
-And kullanici giris yap linkine tiklar......................................passed
-And kullanici mail olarak "ValidEmail" girer................................passed
-And kullanici password olarak "InvalidPassword" girer.......................passed
-And kullanici giris yap butonuna tiklar.....................................passed
-Then kullanici basarili giris yapılmadigini test eder.......................passed
-And kullanici sayfayi kapatir...............................................passed
+        <![CDATA[Given kullanici "URL" sayfasina gider.......................................failed
+And kullanici giris yap linkine tiklar......................................skipped
+Then kullanici mail olarak "ValidEmail" girer...............................skipped
+And kullanici password olarak "ValidPassword" girer.........................skipped
+And kullanici giris yap butonuna tiklar.....................................skipped
+Then kullanici basarili giris yaptigini test eder...........................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: not connected to DevTools
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [544b23765b5553158fc28bfbf1a8f5bb, get {url=https://www.gittigidiyor.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54402/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 544b23765b5553158fc28bfbf1a8f5bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_sayfasina_gider(US1001_positiveLoginTestStepDefinitions.java:17)
+	at ✽.kullanici "URL" sayfasina gider(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1001_PositiveLoginTest.feature:5)
 ]]>
                 
-    </system-out>
+    </failure>
         
 </testcase>
 
-<testcase classname="US1002 Negative Login Test" name="TC03 Yanlis mail ve yanlis şifre ile giriş yapılmamalı" time="32.911">
+<testcase classname="US1002 Negative Login Test" name="TC03 Yanlis mail ve yanlis şifre ile giriş yapılmamalı" time="47.005">
             
-    <system-out>
+    <failure message="unknown error: cannot determine loading status&#10;from disconnected: unable to send message to renderer&#10;  (Session info: chrome=99.0.4844.82)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2f0c5a92479b578c9a4a12d038be47a9, get {url=https://www.gittigidiyor.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54403/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2f0c5a92479b578c9a4a12d038be47a9" type="org.openqa.selenium.WebDriverException">
                     
-        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
-And kullanici giris yap linkine tiklar......................................passed
-And kullanici mail olarak "InvalidEmail" girer..............................passed
-And kullanici password olarak "InvalidPassword" girer.......................passed
-And kullanici giris yap butonuna tiklar.....................................passed
-Then kullanici basarili giris yapılmadigini test eder.......................passed
-And kullanici sayfayi kapatir...............................................passed
+        <![CDATA[Given kullanici "URL" sayfasina gider.......................................failed
+And kullanici giris yap linkine tiklar......................................skipped
+And kullanici mail olarak "InvalidEmail" girer..............................skipped
+And kullanici password olarak "InvalidPassword" girer.......................skipped
+And kullanici giris yap butonuna tiklar.....................................skipped
+Then kullanici basarili giris yapılmadigini test eder.......................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f0c5a92479b578c9a4a12d038be47a9, get {url=https://www.gittigidiyor.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54403/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f0c5a92479b578c9a4a12d038be47a9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_sayfasina_gider(US1001_positiveLoginTestStepDefinitions.java:17)
+	at ✽.kullanici "URL" sayfasina gider(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1002_NegativeLoginTest.feature:5)
 ]]>
                 
-    </system-out>
+    </failure>
+        
+</testcase>
+
+<testcase classname="US1002 Negative Login Test" name="TC04 Yanlış mail ve doğru şifre ile giriş yapılmamalı" time="50.228">
+            
+    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d481a8ed04d855b64c7b5cf15b8812ff, actions {actions=[org.openqa.selenium.interactions.Sequence@28757abd]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54646/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d481a8ed04d855b64c7b5cf15b8812ff" type="org.openqa.selenium.json.JsonException">
+                    
+        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
+And kullanici giris yap linkine tiklar......................................failed
+And kullanici mail olarak "InvalidEmail" girer..............................skipped
+And kullanici password olarak "ValidPassword" girer.........................skipped
+And kullanici giris yap butonuna tiklar.....................................skipped
+Then kullanici basarili giris yapılmadigini test eder.......................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d481a8ed04d855b64c7b5cf15b8812ff, actions {actions=[org.openqa.selenium.interactions.Sequence@28757abd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54646/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d481a8ed04d855b64c7b5cf15b8812ff
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at ✽.kullanici giris yap linkine tiklar(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1002_NegativeLoginTest.feature:15)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+		at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+		at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+		at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+		at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+		at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+		at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+		at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+		at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+		at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+		at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+		at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+		at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+		at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+		at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+		at io.cucumber.core.cli.Main.run(Main.java:87)
+		at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+	at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='GiriÅŸ Yap']"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d481a8ed04d855b64c7b5cf15b8812ff, findElement {using=xpath, value=//div[@title='GiriÅŸ Yap']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54646/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d481a8ed04d855b64c7b5cf15b8812ff
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:206)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:157)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 78 more
+]]>
+                
+    </failure>
+        
+</testcase>
+
+<testcase classname="US1002 Negative Login Test" name="TC05 Doğru mail ve yanlış şifre ile giriş yapılmamalı" time="34.091">
+            
+    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [859dd80d6c31d0336e9e8b12f161988c, actions {actions=[org.openqa.selenium.interactions.Sequence@1db87583]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54818/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 859dd80d6c31d0336e9e8b12f161988c" type="org.openqa.selenium.json.JsonException">
+                    
+        <![CDATA[Given kullanici "URL" sayfasina gider.......................................passed
+And kullanici giris yap linkine tiklar......................................failed
+And kullanici mail olarak "ValidEmail" girer................................skipped
+And kullanici password olarak "InvalidPassword" girer.......................skipped
+And kullanici giris yap butonuna tiklar.....................................skipped
+Then kullanici basarili giris yapılmadigini test eder.......................skipped
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [859dd80d6c31d0336e9e8b12f161988c, actions {actions=[org.openqa.selenium.interactions.Sequence@1db87583]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54818/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859dd80d6c31d0336e9e8b12f161988c
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at ✽.kullanici giris yap linkine tiklar(file:///C:/Users/Erdi/Desktop/Cucumber/com.gittigidiyorCucumberCase/src/test/resources/features/US1002_NegativeLoginTest.feature:24)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+		at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+		at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+		at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+		at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+		at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+		at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+		at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+		at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+		at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+		at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+		at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+		at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+		at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+		at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+		at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+		at io.cucumber.core.cli.Main.run(Main.java:87)
+		at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at stepdefinitions.US1001_positiveLoginTestStepDefinitions.kullanici_giris_yap_linkine_tiklar(US1001_positiveLoginTestStepDefinitions.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:128)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:249)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:110)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:111)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:82)
+	at io.cucumber.core.runtime.Runtime.execute(Runtime.java:94)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:80)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='GiriÅŸ Yap']"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-94EGU8O', ip: '192.168.99.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [859dd80d6c31d0336e9e8b12f161988c, findElement {using=xpath, value=//div[@title='GiriÅŸ Yap']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Erdi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54818/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859dd80d6c31d0336e9e8b12f161988c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:206)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:157)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 78 more
+]]>
+                
+    </failure>
         
 </testcase>
 
